@@ -1,0 +1,19 @@
+{
+  "name": "praktikum05-webservice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API katalog buku perpustakaan kampus - Praktikum 05 Web Service Engineering",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "docs": "node scripts/generate-openapi.cjs",
+    "check": "node --check app.cjs && node --check server.cjs && node --check client.cjs && node --check src/errors.cjs && node --check src/buku.repository.cjs && node --check src/buku.service.cjs && node --check src/buku.controller.cjs && node --check src/buku.routes.cjs && node --check scripts/generate-openapi.cjs && node --check tests/run-http-tests.cjs"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "swagger-ui-express": "5.0.1"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
